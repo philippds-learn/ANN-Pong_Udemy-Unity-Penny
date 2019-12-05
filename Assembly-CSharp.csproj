@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ANN\Layer.cs" />
     <Compile Include="Assets\Scripts\ANN\Neuron.cs" />
     <Compile Include="Assets\Scripts\Brain.cs" />
+    <Compile Include="Assets\Scripts\HumanMovePaddle.cs" />
     <Compile Include="Assets\Scripts\MoveBall.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/philipp.s/Documents/dev/github/ANN-Pong_Udemy-Unity-Penny/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

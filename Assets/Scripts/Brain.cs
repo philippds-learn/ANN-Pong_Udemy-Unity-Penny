@@ -19,7 +19,7 @@ public class Brain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 10f;
+        Time.timeScale = 1f;
 
         this.ann = new ANN(6, 1, 1, 4, 0.01);
         this.ballRigidBody = this.ball.GetComponent<Rigidbody2D>();
@@ -56,6 +56,8 @@ public class Brain : MonoBehaviour
         List<double> output = new List<double>();
         int layerMask = 1 << 9;
         RaycastHit2D hit = Physics2D.Raycast(this.ball.transform.position, this.ballRigidBody.velocity, 1000, layerMask);
+
+        Debug.DrawRay(this.ball.transform.position, this.ballRigidBody.velocity);
 
         if (hit.collider != null)
         {

@@ -22,10 +22,16 @@ public class MoveBall : MonoBehaviour {
         if(collision.gameObject.tag == "backwall")
         {
             this.blop.Play();
+            this.transform.position = new Vector3(0, 13.267f, 0);
         }
         else
         {
             this.blip.Play();
+        }
+
+        if(collision.gameObject.tag == "opposit_backwall")
+        {
+            this.transform.position = new Vector3(0, 13.267f, 0);
         }
     }
 
